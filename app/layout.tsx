@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/shared/header";
-
+import { Categories } from "@/components/shared/categoriets";
 const nunito = Nunito({
   variable: "--font-geist-sans",
   subsets: ["cyrillic"],
@@ -24,6 +24,7 @@ export default function RootLayout({
         <main className="nin-h-screen">
           <Header />
           {children}
+          <Categories/>
         </main>
       </body>
     </html>
